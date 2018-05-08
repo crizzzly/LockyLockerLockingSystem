@@ -1,6 +1,6 @@
-##Anleitung - software
+## Anleitung - software
 
-###Betriebssystem installieren
+### Betriebssystem installieren
 
 Zuerst brauchen wir die neueste Version von Raspbian für unseren Raspberry Pi, die hier kostenlos heruntergeladen werden kann: [https://www.raspberrypi.org/downloads/raspbian/](https://www.raspberrypi.org/downloads/raspbian/)
 
@@ -8,7 +8,7 @@ Um es einfacher zu gestalten entschieden wir uns dazu, die Image Version mit Des
 
 Eine detaillierte Installationsanleitung auf englisch findet man ebenso auf RaspberryPi.org: [https://www.raspberrypi.org/documentation/installation/installing-images/](https://www.raspberrypi.org/documentation/installation/installing-images/)
 
-###Datenbankinstallation
+### Datenbankinstallation
 
 Im nächsten Schritt installieren wir die Datenbank auf unserem Raspberry Pi.
 Auch hierzu gibt es viele Anleitungen im Netz.
@@ -19,18 +19,19 @@ In unserem Fall ist es jedoch ausreichend, Teil 1 bis Teil 4 zu folgen (Apache2,
 
 [https://tutorials-raspberrypi.de/webserver-installation-apache2/](https://tutorials-raspberrypi.de/webserver-installation-apache2/)
 
-###Einrichtung des Webservers und der Datenbank
+### Einrichtung des Webservers und der Datenbank
 Alle erforderlichen Dateien für das AdminInterface sind im Ordner html zu finden. Dieser wird einfach komplett auf dem Raspberry unter /var/http gespeichert.
+Wichtig hierbei ist jedoch, dass man die Usernames und Passwörter in den php Files anpasst!
 
-Anschließend muss noch die Datei db.php in PhpMyAdmin importiert werden.
+Anschließend muss noch die Datei doorMaster.sql in PhpMyAdmin importiert werden.
 
 Hierzu öffnet man PhpMyAdmin im Webbrowser, klickt auf "Datenbanken" im oberen Menü, dann auf die Datenbank in die importiert werden soll, anschließend auf "Importieren".
-Dann muss nur noch die Datei "db.php" aus diesem Repository ausgewählt werden und mit dem Button "Go" importiert werden.
+Dann muss nur noch die Datei "doorMaster.sql" aus diesem Repository ausgewählt werden und mit dem Button "Go" importiert werden.
 
-###Python Skripte einfügen
+### Python Skripte einfügen
 Die Python Skripte befinden sich im Ordner doorControl in diesem Repository. Dieser muss einfach komplett im home-Ordner des angemeldeten Nutzers in Raspbian gespeichert werden.
 
-###dependencies - Abhängigkeiten
+### dependencies - Abhängigkeiten
 Um das System zum Laufen zu kriegen müssen noch einige Module mit dem Terminal installiert werden.
 
 1. Python
@@ -51,7 +52,7 @@ Unser Python Skript nutzt den Befehl "nfc-poll" aus der Bibliothek "libnfc". Die
 heruntergeladen werden.
 Bevor diese installiert werden kann, muss allerdings das Skript dazu angepasst werden!
 
-dieses befindet sich nach dem clone im home-Verzeichnis unter libnfc-master/examples/nfc-poll.c und muss durch das gleichnamige skript im Ordner "skripte" in diesem Repository ersetzt werden. Dies ist wesentlich einfacher, wenn man es über den Dateimanager macht.
+Das zu anpassende Skript befindet sich nach dem clone im home-Verzeichnis unter libnfc-master/examples/nfc-poll.c und muss durch das gleichnamige skript im Ordner "skripte" in diesem Repository ersetzt werden. Dies ist wesentlich einfacher, wenn man es über den Dateimanager macht.
 
 anschließend wechselt man im Terminal in den Ordner libnfc-master.
 
@@ -71,4 +72,4 @@ Eine detaillierte Anleitung auf deutsch ist unter folgendem Link zu finden:
 
 [http://www.netzmafia.de/skripten/hardware/RasPi/RasPi_I2C.html](http://www.netzmafia.de/skripten/hardware/RasPi/RasPi_I2C.html)
 
-###Puzzlestücke zusammenfügen
+### Puzzlestücke zusammenfügen
