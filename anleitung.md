@@ -73,3 +73,5 @@ Eine detaillierte Anleitung auf deutsch ist unter folgendem Link zu finden:
 [http://www.netzmafia.de/skripten/hardware/RasPi/RasPi_I2C.html](http://www.netzmafia.de/skripten/hardware/RasPi/RasPi_I2C.html)
 
 ### Puzzlestücke zusammenfügen
+
+to be continued ...
