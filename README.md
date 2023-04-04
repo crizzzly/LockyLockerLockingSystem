@@ -4,7 +4,7 @@ Internet of Things
 Semester 3  
 Prototyping with Prof. Michael Schuster*
 
-*by Christina Rost and Xian Wu, 2018*
+*Christina Rost and Xian Wu, 2018*
 
 ## Beschreibung
 In unserem Lab haben wir das Problem, dass uns viele Spinde zur Verfügung stehen - mit ebenso vielen Schlüsseln. Manche dieser Spinde stehen allen Studenten unseres Studiengangs zur Verfügung, manche aber nur den Dozenten und den akademischen Mitarbeitern.
